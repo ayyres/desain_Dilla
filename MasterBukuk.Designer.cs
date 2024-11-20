@@ -43,6 +43,8 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox7
@@ -196,10 +198,19 @@
             this.label8.TabIndex = 40;
             this.label8.Text = "Judul Buku";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(150, 301);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(522, 123);
+            this.dataGridView1.TabIndex = 55;
+            // 
             // MasterBukuk
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.button2);
@@ -216,8 +227,9 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Name = "MasterBukuk";
-            this.Size = new System.Drawing.Size(740, 336);
+            this.Size = new System.Drawing.Size(740, 435);
             this.Load += new System.EventHandler(this.MasterBukuk_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -240,5 +252,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
